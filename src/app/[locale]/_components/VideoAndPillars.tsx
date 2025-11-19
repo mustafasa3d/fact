@@ -7,7 +7,7 @@ export function VideoAndPillars() {
         <a
           href="#"
           aria-label="تشغيل الفيديو التعريفي للمركز"
-          className="group relative block overflow-hidden rounded-md bg-[#0f5f46]/10"
+          className="group relative block overflow-hidden rounded-md bg-primary/10"
         >
           <div className="relative aspect-video w-full">
             <Image
@@ -22,7 +22,7 @@ export function VideoAndPillars() {
               فيديو
             </span>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="grid place-items-center rounded-full bg-white/90 text-[#0f5f46] shadow-lg transition-transform duration-300 group-hover:scale-105" style={{width:64,height:64}}>
+              <div className="grid place-items-center rounded-full bg-white/90 text-primary shadow-lg transition-transform duration-300 group-hover:scale-105" style={{width:64,height:64}}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                   <path d="M8 5v14l11-7z" />
                 </svg>

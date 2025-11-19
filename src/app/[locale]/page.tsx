@@ -9,8 +9,10 @@ import { LatestBooks } from "./_components/LatestBooks";
 import { NewsSection } from "./_components/NewsSection";
 import { EventsSlider } from "./_components/EventsSlider";
 import { TrustedPartners } from "./_components/TrustedPartners";
+import { Footer } from "@/components/layout/footer/Footer";
 
 export default function LocaleHome() {
+  
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -22,6 +24,7 @@ export default function LocaleHome() {
       <NewsSection />
       <EventsSlider />
       <TrustedPartners />
+      <Footer />
     </div>
   );
 }

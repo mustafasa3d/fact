@@ -1,47 +1,74 @@
 "use client";
 
 import Link from "next/link";
-
-const NAV_ITEMS = [
-  { href: "#about", label: "من نحن" },
-  { href: "#research", label: "الأبحاث والدراسات" },
-  { href: "#publications", label: "المنشورات" },
-  { href: "#media", label: "المركز الإعلامي" },
-  { href: "#blog", label: "المدونة" },
-  { href: "#memory", label: "الذاكرة المرئية" },
-  { href: "#contact", label: "اتصل بنا" },
-];
+import { useTranslations, useLocale } from "next-intl";
+import { Link as IntlLink, usePathname } from "@/i18n/navigation";
+import Image from "next/image";
 
 export function Navbar() {
-  return (
-    <header className="w-full border-b border-[#e5e5e5] bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-0">
-        <div className="flex items-center gap-3">
-          <div className="h-10 w-24 bg-[#0f5f46]" aria-hidden />
-          <div className="flex flex-col text-sm">
-            <span className="font-semibold text-[#0f5f46]">FACT</span>
-            <span className="text-[11px] text-gray-600">
-              CENTER FOR STRATEGIC STUDIES
-            </span>
-          </div>
-        </div>
+  const t = useTranslations("nav");
+  const locale = useLocale();
+  const pathname = usePathname();
+  const switchLocale = locale === "ar" ? "en" : "ar";
 
-        <nav className="hidden items-center gap-6 text-sm font-medium text-gray-800 lg:flex">
+  const NAV_ITEMS = [
+    { href: "#about", label: t("about") },
+    { href: "#research", label: t("research") },
+    { href: "#publications", label: t("publications") },
+    { href: "#memory", label: t("memory") },
+    { href: "#mediaCenter", label: t("mediaCenter") },
+    { href: "#blog", label: t("blog") },
+    { href: "#contact", label: t("contact") },
+  ];
+  return (
+    <header className="w-full border-b border-white bg-primary backdrop-blur">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-0">
+        <Image
+          src="/assets/images/navbar/logo.png"
+          className="h-16 w-48"
+          alt="FACT Center for Strategic Studies"
+          width={240}
+          height={120}
+          priority
+        />
+
+        <nav className="hidden items-center gap-6 text-sm font-medium lg:flex text-white">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="transition-colors hover:text-[#0f5f46]"
+              className="transition-colors hover:text-white/70"
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
-          <button className="hidden rounded-full border border-white/40 bg-[#0f5f46] px-4 py-1.5 text-xs font-medium text-white shadow-sm hover:bg-[#0d4f3a] lg:inline-flex">
-            English
-          </button>
+        <div className="flex items-center gap-5">
+          <Image
+            src="/assets/images/navbar/search.svg"
+            className="h-4 w-4"
+            alt="search"
+            width={16}
+            height={16}
+            priority
+          />
+
+          <IntlLink
+            href={{ pathname }}
+            locale={switchLocale}
+            className="hidden lg:inline-flex items-center gap-1 rounded-full text-xs font-medium text-white shadow-sm hover:bg-[#0d4f3a]"
+          >
+            {t("english")}
+            <Image
+              src="/assets/images/navbar/world.svg"
+              className="h-4 w-4"
+              alt="arrow"
+              width={16}
+              height={16}
+              priority
+            />
+          </IntlLink>
         </div>
       </div>
     </header>

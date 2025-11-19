@@ -45,7 +45,7 @@ export function NewsSection() {
     <section id="news" className="bg-white py-12">
       <div className="mx-auto max-w-6xl px-4 lg:px-0">
         <div className="mb-6 text-center lg:mb-8">
-          <h2 className="mb-2 text-2xl font-bold text-[#0f5f46]">آخر الأخبار والإعلانات</h2>
+          <h2 className="mb-2 text-2xl font-bold text-primary">آخر الأخبار والإعلانات</h2>
           <p className="mx-auto max-w-3xl text-sm text-gray-600">
             ابقَ على اطلاع بآخر أخبارنا التي تقدم رؤى معمقة حول أهم القضايا في مجالاتنا.
           </p>
@@ -76,7 +76,7 @@ export function NewsSection() {
                       <div className="mt-3 flex justify-end">
                         <Link
                           href={`#news-${n.id}`}
-                          className="inline-flex items-center gap-2 rounded-md bg-white/90 px-3 py-1.5 text-xs font-semibold text-[#0f5f46] shadow-sm backdrop-blur hover:bg-white"
+                          className="inline-flex items-center gap-2 rounded-md bg-white/90 px-3 py-1.5 text-xs font-semibold text-primary shadow-sm backdrop-blur hover:bg-white"
                         >
                           قراءة المزيد
                           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>

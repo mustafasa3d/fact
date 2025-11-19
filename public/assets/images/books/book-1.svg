@@ -6,8 +6,8 @@
     </linearGradient>
   </defs>
   <rect width='520' height='760' fill='url(#b1)'/>
-  <rect x='420' y='0' width='48' height='760' fill='#0f5f46'/>
-  <g fill='#0f5f46'>
+  <rect x='420' y='0' width='48' height='760' fill='#337058'/>
+  <g fill='#337058'>
     <path d='M130 300h100l40 60 40-60h100l-100 160h-80z' fill-opacity='0.7'/>
   </g>
 </svg>

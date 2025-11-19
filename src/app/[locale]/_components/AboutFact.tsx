@@ -15,7 +15,7 @@ export function AboutFact() {
         </div>
 
         <div className="mx-auto max-w-3xl text-center lg:text-right">
-          <h2 className="mb-4 text-2xl font-bold text-[#0f5f46]">من نحن</h2>
+          <h2 className="mb-4 text-2xl font-bold text-primary">من نحن</h2>
           <p className="leading-8 text-gray-700">
             مركز الحقائق للدراسات الاستراتيجية (FACT) رؤية للتفكير، حلول للمستقبل.
             تأسس مطلع 2025 في لندن برئاسة الوزير الأردني الأسبق وجيه عزايزة، ويضم نخبة من الباحثين والخبراء.

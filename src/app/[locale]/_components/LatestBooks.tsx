@@ -27,7 +27,7 @@ export function LatestBooks() {
     <section id="latest-books" className="bg-white py-12">
       <div className="mx-auto max-w-6xl px-4 lg:px-0">
         <div className="mb-8 text-center lg:mb-10">
-          <h2 className="mb-2 text-2xl font-bold text-[#0f5f46]">إصداراتنا الأخيرة</h2>
+          <h2 className="mb-2 text-2xl font-bold text-primary">إصداراتنا الأخيرة</h2>
           <p className="mx-auto max-w-3xl text-sm text-gray-600">
             ابقَ على اطلاع بآخر إصداراتنا التي تقدم رؤى معمقة حول أهم القضايا في مجالنا.
           </p>
@@ -39,7 +39,7 @@ export function LatestBooks() {
               <div className="relative aspect-3/4 w-full">
                 <Image src={b.img} alt={b.title} fill className="object-cover" />
                 <div className="absolute inset-x-0 bottom-0 translate-y-1">
-                  <div className="mx-3 -mb-1 rounded bg-[#0f5f46] px-4 py-3 text-white shadow-md">
+                  <div className="mx-3 -mb-1 rounded bg-primary px-4 py-3 text-white shadow-md">
                     <h3 className="mb-1 line-clamp-2 text-base font-bold">{b.title}</h3>
                     <div className="flex items-center gap-2 text-xs opacity-90">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
@@ -55,7 +55,7 @@ export function LatestBooks() {
         </div>
 
         <div className="mt-8 flex justify-center">
-          <Link href="#all-books" className="rounded-md bg-[#0f5f46] px-6 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#0d4f3a]">
+          <Link href="#all-books" className="rounded-md bg-primary px-6 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#0d4f3a]">
             عرض الكل
           </Link>
         </div>

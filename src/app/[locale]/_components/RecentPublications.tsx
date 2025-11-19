@@ -30,7 +30,7 @@ export function RecentPublications() {
     <section id="publications" className="bg-white py-12">
       <div className="mx-auto max-w-6xl px-4 lg:px-0">
         <div className="mb-8 text-center lg:mb-10">
-          <h2 className="mb-2 text-2xl font-bold text-[#0f5f46]">منشورات حديثة</h2>
+          <h2 className="mb-2 text-2xl font-bold text-primary">منشورات حديثة</h2>
           <p className="mx-auto max-w-3xl text-sm text-gray-600">
             اكتشف أحدث إصداراتنا التي تجمع بين التحليل العميق والرؤى الاستراتيجية حول القضايا الإقليمية والدولية.
           </p>
@@ -49,7 +49,7 @@ export function RecentPublications() {
                 </span>
               </div>
               <div className="p-4 text-right">
-                <h3 className="mb-2 line-clamp-2 text-lg font-extrabold text-[#0f5f46]">
+                <h3 className="mb-2 line-clamp-2 text-lg font-extrabold text-primary">
                   {p.title}
                 </h3>
                 <p className="mb-4 line-clamp-3 text-sm text-gray-700">{p.desc}</p>
@@ -57,7 +57,7 @@ export function RecentPublications() {
                   <div />
                   <Link
                     href={`#pub-${p.id}`}
-                    className="inline-flex items-center gap-2 rounded-md bg-[#0f5f46] px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#0d4f3a]"
+                    className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#0d4f3a]"
                   >
                     قراءة المزيد
                     <svg

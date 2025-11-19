@@ -16,7 +16,7 @@ export function TrustedPartners() {
   return (
     <section id="partners" className="bg-white py-12">
       <div className="mx-auto max-w-6xl px-4 text-center lg:px-0">
-        <h2 className="mb-2 text-2xl font-bold text-[#0f5f46]">شركاؤنا الموثوقون</h2>
+        <h2 className="mb-2 text-2xl font-bold text-primary">شركاؤنا الموثوقون</h2>
         <p className="mx-auto mb-6 max-w-3xl text-sm text-gray-600">
           تعاونًا مع شركاء استراتيجيين لتحقيق نتائج تواكب أعلى المعايير.
         </p>

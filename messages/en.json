@@ -11,6 +11,14 @@
     "contact": "Contact Us",
     "english": "العربية"
   },
+  "error": {
+    "pageNotFound": "Page Not Found",
+    "pageNotFoundDesc": "Sorry, the page you are looking for does not exist",
+    "backHome": "Back to Home",
+    "error": "Error Occurred",
+    "errorDesc": "Sorry, something went wrong. Please try again",
+    "tryAgain": "Try Again"
+  },
   "home": {
     "hero": {
       "title": "FACT Center for Strategic Studies – Where vision shapes decisions",
