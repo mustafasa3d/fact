@@ -1,0 +1,34 @@
+{
+  "locale": "en",
+  "siteName": "FACT Center for Strategic Studies",
+  "nav": {
+    "about": "About Us",
+    "research": "Research & Studies",
+    "publications": "Publications",
+    "mediaCenter": "Media Center",
+    "blog": "Blog",
+    "memory": "Visual Memory",
+    "contact": "Contact Us",
+    "english": "العربية"
+  },
+  "home": {
+    "hero": {
+      "title": "FACT Center for Strategic Studies – Where vision shapes decisions",
+      "subtitle": "An independent research center specialized in in-depth strategic studies on geopolitical issues and global crises, with a particular focus on the Palestinian refugees question, UNRWA, and conflict resolution."
+    },
+    "servicesTabs": {
+      "experts": "Our Experts",
+      "readings": "Readings",
+      "latestPublications": "Latest Publications",
+      "consulting": "Consulting Services"
+    },
+    "sections": {
+      "about": "About Us",
+      "recentPublications": "Recent Publications",
+      "latestBooks": "Latest Books",
+      "news": "News & Announcements",
+      "events": "Key Events",
+      "partners": "Our Trusted Partners"
+    }
+  }
+}
