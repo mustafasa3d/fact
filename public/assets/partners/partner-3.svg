@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 80'>
+  <rect width='220' height='80' rx='10' fill='#ffffff'/>
+  <g transform='translate(12,16)'>
+    <rect x='6' y='10' width='28' height='28' rx='4' fill='#0f5f46'/>
+    <text x='60' y='30' font-family='Arial' font-size='22' font-weight='700' fill='#0f5f46'>WikiPalestine</text>
+  </g>
+</svg>

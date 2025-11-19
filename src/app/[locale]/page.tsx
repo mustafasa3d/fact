@@ -7,6 +7,8 @@ import { VideoAndPillars } from "./_components/VideoAndPillars";
 import { RecentPublications } from "./_components/RecentPublications";
 import { LatestBooks } from "./_components/LatestBooks";
 import { NewsSection } from "./_components/NewsSection";
+import { EventsSlider } from "./_components/EventsSlider";
+import { TrustedPartners } from "./_components/TrustedPartners";
 
 export default function LocaleHome() {
   return (
@@ -18,6 +20,8 @@ export default function LocaleHome() {
       <RecentPublications />
       <LatestBooks />
       <NewsSection />
+      <EventsSlider />
+      <TrustedPartners />
     </div>
   );
 }
