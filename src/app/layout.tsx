@@ -27,10 +27,12 @@ export default async function RootLayout({
 
   const locale = await getLocale();
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <body
-        className={`${tajawal.variable} ${geistMono.variable} antialiased`}
-      >
+    <html
+      lang={locale}
+      dir={locale === "ar" ? "rtl" : "ltr"}
+      className={`${tajawal.className} ${tajawal.variable} ${geistMono.variable} font-sans`}
+    >
+      <body className={`antialiased`}>
         {children}
       </body>
     </html>

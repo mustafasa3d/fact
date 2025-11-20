@@ -1,6 +1,7 @@
 import Image from "next/image";
-import {useTranslations} from "next-intl";
+import { useTranslations } from "next-intl";
 
+const activetab = "1";
 export function Hero() {
   const t = useTranslations("home");
   return (
@@ -15,23 +16,34 @@ export function Hero() {
         <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-black/60" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[480px] max-w-6xl flex-col justify-center px-4 pb-10 pt-24 lg:px-0">
-        <div className="max-w-3xl self-center text-center">
-          <h1 className="mb-4 text-2xl font-bold leading-relaxed tracking-tight sm:text-3xl lg:text-4xl">
+      <div className="relative mx-auto flex min-h-[480px] max-w-6xl flex-col justify-center px-4 pb-30 pt-24 lg:px-0">
+        <div className="self-center text-center">
+          <h1 className="max-w-5xl mx-auto mb-4 text-2xl font-bold leading-relaxed tracking-tight sm:text-3xl lg:text-[3.4rem]">
             {t("hero.title")}
           </h1>
-          <p className="text-sm leading-7 text-gray-200 sm:text-base">
+          <p className="max-w-4xl mx-auto text-sm leading-7 text-gray-200 sm:text-2xl">
             {t("hero.subtitle")}
           </p>
         </div>
       </div>
 
       <div className="relative border-t border-white/10 bg-white text-right text-gray-900">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-y divide-gray-200 md:grid-cols-4">
-          <HeroTab accent>{t("servicesTabs.consulting")}</HeroTab>
-          <HeroTab>{t("servicesTabs.latestPublications")}</HeroTab>
-          <HeroTab>{t("servicesTabs.readings")}</HeroTab>
-          <HeroTab>{t("servicesTabs.experts")}</HeroTab>
+        <div className="mx-auto grid max-w-6xl grid-cols-2 md:grid-cols-4 -mt-15 border-2 border-white">
+          <HeroTab
+            active={activetab === "1"}
+            imgSrc="/assets/images/hero/s1.svg"
+          >
+            {t("servicesTabs.consulting")}
+          </HeroTab>
+          <HeroTab imgSrc="/assets/images/hero/s2.svg">
+            {t("servicesTabs.latestPublications")}
+          </HeroTab>
+          <HeroTab imgSrc="/assets/images/hero/s3.svg">
+            {t("servicesTabs.readings")}
+          </HeroTab>
+          <HeroTab noLine imgSrc="/assets/images/hero/s4.svg">
+            {t("servicesTabs.experts")}
+          </HeroTab>
         </div>
       </div>
     </section>
@@ -40,20 +52,30 @@ export function Hero() {
 
 type HeroTabProps = {
   children: React.ReactNode;
-  accent?: boolean;
+  active?: boolean;
+  imgSrc?: string;
+  noLine?: boolean;
 };
 
-function HeroTab({ children, accent }: HeroTabProps) {
+function HeroTab({ children, active, imgSrc, noLine }: HeroTabProps) {
   return (
     <button
-      className={
-        "flex items-center justify-center gap-2 px-4 py-5 text-sm font-semibold transition-colors " +
-        (accent
-          ? "bg-primary text-white hover:bg-[#0d4f3a]"
-          : "bg-white text-gray-900 hover:bg-gray-50")
-      }
+      className={`flex flex-col items-center justify-center gap-3 px-4 py-5 text-sm lg:text-3xl transition-colors bg-white text-gray-900 hover:bg-gray-50 relative ${
+        noLine
+          ? " !after:hidden"
+          : " after:content-[''] after:absolute after:min-h-[20px] after:h-[calc(100%-50px)] after:w-[2px] after:bg-gray-200 after:inline-block after:left-0 after:top-5 "
+      } ${active ? "!bg-primary text-white hover:!bg-[#0d4f3a] after:!-left-2" : ""}`}
       type="button"
     >
+      {imgSrc && (
+        <Image
+          src={imgSrc}
+          alt=""
+          width={106}
+          height={106}
+          className="h-24 w-24"
+        />
+      )}
       {children}
     </button>
   );
