@@ -12,11 +12,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/shared/Container";
 import { useTranslations } from "next-intl";
+import { Skeleton } from "@/components/shared/Skeleton";
+import { useMounted } from "@/hooks/useMounted";
 
 export function EventsSlider() {
   const swiperRef = useRef<SwiperType | null>(null);
   const t = useTranslations("home.eventsSlider");
   const te = useTranslations("home.events");
+  const isMounted = useMounted();
 
   const events = Array.from({ length: 6 }, (_, i) => ({
     id: i + 1,
@@ -42,23 +45,31 @@ export function EventsSlider() {
           </div>
 
           <div className="col-span-12 lg:col-span-8">
-            <Swiper
-              modules={[Navigation]}
-              onSwiper={(s) => (swiperRef.current = s)}
-              spaceBetween={16}
-              breakpoints={{
-                0: { slidesPerView: 1 },
-                640: { slidesPerView: 2 },
-                1200: { slidesPerView: 3 },
-              }}
-              className="pb-2"
-            >
-              {events.map((ev) => (
-                <SwiperSlide key={ev.id}>
-                  <EventCard date={ev.date} title={ev.title} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            {isMounted ? (
+              <Swiper
+                modules={[Navigation]}
+                onSwiper={(s) => (swiperRef.current = s)}
+                spaceBetween={16}
+                breakpoints={{
+                  0: { slidesPerView: 1 },
+                  640: { slidesPerView: 2 },
+                  1200: { slidesPerView: 3 },
+                }}
+                className="pb-2"
+              >
+                {events.map((ev) => (
+                  <SwiperSlide key={ev.id}>
+                    <EventCard date={ev.date} title={ev.title} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            ) : (
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                {[...Array(4)].map((_, i) => (
+                  <Skeleton key={i} className="aspect-square w-full rounded-md" />
+                ))}
+              </div>
+            )}
           </div>
         </div>
 

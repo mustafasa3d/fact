@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Tajawal, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import { getLocale } from "next-intl/server";
+import "./globals.css";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const tajawal = Tajawal({
   variable: "--font-tajawal",

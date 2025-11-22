@@ -42,7 +42,7 @@ export async function RecentPublications() {
           {items.map((p) => (
             <article
               key={p.id}
-              className="group overflow-hidden transition hover:shadow-md"
+              className="group overflow-hidden transition"
             >
               <div className="relative aspect-16/10 w-full">
                 <Image src={p.img} alt={p.title} fill className="object-cover" />
