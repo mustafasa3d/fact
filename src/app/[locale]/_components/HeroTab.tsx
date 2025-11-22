@@ -10,7 +10,7 @@ type HeroTabProps = {
 export default function HeroTab({ children, active, imgSrc, noLine }: HeroTabProps) {
   return (
     <button
-      className={`flex max-md:after:!hidden flex-col items-center justify-center gap-3 px-4 py-5 text-sm lg:text-3xl transition-colors bg-white text-gray-900 hover:bg-gray-50 relative ${
+      className={`flex max-md:border max-md:border-gray-200 max-md:after:!hidden flex-col items-center justify-center gap-3 px-4 py-5 text-sm lg:text-3xl transition-colors bg-white text-gray-900 hover:bg-gray-50 relative ${
         noLine
           ? " after:!hidden"
           : " after:content-[''] after:absolute after:min-h-[20px] after:h-[calc(100%-50px)] after:w-[2px] after:bg-gray-200 after:inline-block rtl:after:left-0 ltr:after:right-0 after:top-5 "

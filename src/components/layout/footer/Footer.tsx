@@ -3,9 +3,22 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-zinc-900 text-zinc-100" id="footer">
+    <footer className="bg-[#3f3f3f] text-white" id="footer">
       {/* Newsletter */}
-      <div className="mx-auto max-w-6xl px-4 py-6 lg:px-0">
+      <div className="mx-auto max-w-6xl px-4 py-6 lg:px-0 grid grid-cols-1 lg:grid-cols-2">
+        {/* Logo */}
+        <div className="flex items-start justify-start max-lg:mb-5">
+          <div className="flex items-center gap-3">
+            <div className="relative h-20 w-56">
+               <Image
+                  src="/assets/images/footer/footer-logo.svg"
+                  alt="FACT"
+                  fill
+                  className="object-contain"
+                />
+            </div>
+          </div>
+        </div>
         <form
           className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center"
           action="#"
@@ -13,11 +26,11 @@ export function Footer() {
           <input
             type="email"
             placeholder="البريد الإلكتروني"
-            className="h-11 flex-1 rounded-md border border-zinc-700 bg-zinc-800/60 px-4 text-sm placeholder:text-zinc-400 focus:border-emerald-500 focus:outline-none"
+            className="min-h-12 flex-1 rounded-md border border-white bg-white px-4 text-sm text-zinc-900 placeholder:text-zinc-500 focus:outline-none"
           />
           <button
             type="submit"
-            className="h-11 rounded-md bg-primary px-6 text-sm font-semibold text-white transition-colors hover:bg-[#0d4f3a]"
+            className="min-h-12 rounded-md bg-primary px-6 text-sm font-semibold text-white transition-colors hover:bg-[#0d4f3a]"
           >
             اشترك
           </button>
@@ -27,24 +40,12 @@ export function Footer() {
       {/* Links */}
       <div className="mx-auto max-w-6xl px-4 py-10 lg:px-0">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
-          {/* Logo */}
-          <div className="flex items-start justify-start md:justify-end">
-            <div className="flex items-center gap-3">
-              <div className="relative h-14 w-28">
-                <Image
-                  src="/assets/images/whoweare/fact-logo.svg"
-                  alt="FACT"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-
           {/* Quick Links */}
-          <div className="text-right">
-            <h4 className="mb-3 text-sm font-semibold text-white">روابط سريعة</h4>
-            <ul className="space-y-2 text-sm text-zinc-300">
+          <div className="text-right col-span-2">
+            <h4 className="mb-3 text-sm font-semibold text-white">
+              روابط سريعة
+            </h4>
+            <ul className="space-y-2 text-sm text-zinc-300 grid md:grid-cols-2">
               <li>
                 <Link href="#about" className="hover:text-white">
                   من نحن
@@ -62,7 +63,12 @@ export function Footer() {
               </li>
               <li>
                 <Link href="#events" className="hover:text-white">
-                  من الفعاليات
+                  الفعاليات
+                </Link>
+              </li>
+              <li>
+                <Link href="#blog" className="hover:text-white">
+                  المدونة
                 </Link>
               </li>
               <li>
@@ -74,7 +80,7 @@ export function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="text-right">
+          <div className="text-right col-span-2 md:col-span-1">
             <h4 className="mb-3 text-sm font-semibold text-white">تواصل</h4>
             <ul className="space-y-2 text-sm text-zinc-300">
               <li>fact@email.com</li>
@@ -84,9 +90,11 @@ export function Footer() {
           </div>
 
           {/* Social */}
-          <div className="text-right">
-            <h4 className="mb-3 text-sm font-semibold text-white">تابعونا عبر</h4>
-            <div className="flex flex-wrap items-center justify-start gap-3 md:justify-end">
+          <div className="col-span-2 md:col-span-1">
+            <h4 className="mb-3 text-sm font-semibold text-white">
+              تابعونا عبر
+            </h4>
+            <div className="flex flex-wrap items-center gap-3">
               {[
                 { name: "facebook", path: mdiPath.facebook },
                 { name: "linkedin", path: mdiPath.linkedin },
@@ -98,9 +106,15 @@ export function Footer() {
                   key={s.name}
                   href="#"
                   aria-label={s.name}
-                  className="grid h-9 w-9 place-items-center rounded-full border border-zinc-700 text-zinc-300 transition-colors hover:border-white hover:text-white"
+                  className="grid h-7 w-7 lg:h-11 lg:w-11 place-items-center rounded-full bg-white text-zinc-900 transition-colors hover:bg-white/90"
                 >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden
+                  >
                     <path d={s.path} />
                   </svg>
                 </Link>
@@ -111,9 +125,9 @@ export function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-zinc-800 py-3">
+      <div className="border-t border-zinc-100 py-3">
         <div className="mx-auto max-w-6xl px-4">
-          <div className="flex flex-wrap items-center justify-center gap-6 text-center text-xs text-zinc-400">
+          <div className="flex flex-wrap items-center justify-center gap-8 text-center text-sm text-zinc-200 divide-x divide-zinc-600">
             <span>حقوق النشر</span>
             <span>سياسة الخصوصية</span>
             <span>سياسة التعليقات</span>
