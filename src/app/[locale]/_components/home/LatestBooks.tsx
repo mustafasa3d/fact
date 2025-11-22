@@ -12,19 +12,19 @@ export async function LatestBooks() {
       id: 1,
       title: tb("0.title"),
       author: tb("0.author"),
-      img: "/assets/images/books/book-1.svg",
+      img: "/assets/images/books/book.svg",
     },
     {
       id: 2,
       title: tb("1.title"),
       author: tb("1.author"),
-      img: "/assets/images/books/book-2.svg",
+      img: "/assets/images/books/book.svg",
     },
     {
       id: 3,
       title: tb("2.title"),
       author: tb("2.author"),
-      img: "/assets/images/books/book-3.svg",
+      img: "/assets/images/books/book.svg",
     },
   ];
 
@@ -50,7 +50,7 @@ export async function LatestBooks() {
                   alt={b.title}
                   width={600}
                   height={700}
-                  className="w-full h-[calc(100%-50px)] object-cover ring-1 ring-gray-200"
+                  className="w-full h-[calc(100%-50px)] object-cover ring-1 ring-gray-200 no-repeat"
                 />
                 <div className="absolute inset-x-0 bottom-0">
                   <div className="mx-3 -mb-1 rounded bg-primary px-4 py-3 text-white shadow-md">

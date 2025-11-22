@@ -14,12 +14,12 @@ export function NewsSection() {
   const tn = useTranslations("home.news");
 
   const news = [
-    { id: 1, title: tn("0.title"), img: "/assets/images/news/news-1.svg" },
-    { id: 2, title: tn("1.title"), img: "/assets/images/news/news-2.svg" },
-    { id: 3, title: tn("2.title"), img: "/assets/images/news/news-1.svg" },
-    { id: 4, title: tn("3.title"), img: "/assets/images/news/news-2.svg" },
-    { id: 5, title: tn("4.title"), img: "/assets/images/news/news-1.svg" },
-    { id: 6, title: tn("5.title"), img: "/assets/images/news/news-2.svg" },
+    { id: 1, title: tn("0.title"), img: "/assets/images/news/new1.jpg" },
+    { id: 2, title: tn("1.title"), img: "/assets/images/news/new2.jpg" },
+    { id: 3, title: tn("2.title"), img: "/assets/images/news/new1.jpg" },
+    { id: 4, title: tn("3.title"), img: "/assets/images/news/new2.jpg" },
+    { id: 5, title: tn("4.title"), img: "/assets/images/news/new1.jpg" },
+    { id: 6, title: tn("5.title"), img: "/assets/images/news/new2.jpg" },
   ];
 
   return (
