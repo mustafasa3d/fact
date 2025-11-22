@@ -11,11 +11,9 @@ export default async function ProvidersLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale?: "ar" | "en" }>;
+  params: Promise<{ locale: string }>;
 }) {
-  // const { locale } = await params;
-  // const messages = (await import(`../../../messages/${locale}.json`)).default;
-  const locale = ((await params)?.locale ?? "ar") as "ar" | "en";
+  const { locale } = await params;
   const messages = await getMessages();
 
   return (
