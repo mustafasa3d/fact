@@ -2,14 +2,11 @@
 
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
-import { Link as IntlLink, usePathname } from "@/i18n/navigation";
 import Image from "next/image";
+import LanguageSwitch from "./LanguageSwitch";
 
 export function Navbar() {
   const t = useTranslations("nav");
-  const locale = useLocale();
-  const pathname = usePathname();
-  const switchLocale = locale === "ar" ? "en" : "ar";
 
   const NAV_ITEMS = [
     { href: "#about", label: t("about") },
@@ -44,32 +41,7 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-5">
-          <Image
-            src="/assets/images/navbar/search.svg"
-            className="h-4 w-4"
-            alt="search"
-            width={16}
-            height={16}
-            priority
-          />
-
-          <IntlLink
-            href={{ pathname }}
-            locale={switchLocale}
-            className="hidden lg:inline-flex items-center gap-1 rounded-full text-xs font-medium text-white shadow-sm hover:bg-[#0d4f3a]"
-          >
-            {t("english")}
-            <Image
-              src="/assets/images/navbar/world.svg"
-              className="h-4 w-4"
-              alt="arrow"
-              width={16}
-              height={16}
-              priority
-            />
-          </IntlLink>
-        </div>
+        <LanguageSwitch />
       </div>
     </header>
   );

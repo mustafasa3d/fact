@@ -42,10 +42,10 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           {/* Quick Links */}
           <div className="text-right col-span-2">
-            <h4 className="mb-3 text-sm font-semibold text-white">
+            <h4 className="mb-3 text-sm lg:text-2xl font-semibold text-white">
               روابط سريعة
             </h4>
-            <ul className="space-y-2 text-sm text-zinc-300 grid md:grid-cols-2">
+            <ul className="space-y-2 text-sm lg:text-2xl text-zinc-300 grid md:grid-cols-2">
               <li>
                 <Link href="#about" className="hover:text-white">
                   من نحن
@@ -81,8 +81,8 @@ export function Footer() {
 
           {/* Contact */}
           <div className="text-right col-span-2 md:col-span-1">
-            <h4 className="mb-3 text-sm font-semibold text-white">تواصل</h4>
-            <ul className="space-y-2 text-sm text-zinc-300">
+            <h4 className="mb-3 text-sm lg:text-2xl font-semibold text-white">تواصل</h4>
+            <ul className="space-y-2 text-sm lg:text-2xl text-zinc-300">
               <li>fact@email.com</li>
               <li>+962 7000 000</li>
               <li>الأردن، عمان.</li>
@@ -91,7 +91,7 @@ export function Footer() {
 
           {/* Social */}
           <div className="col-span-2 md:col-span-1">
-            <h4 className="mb-3 text-sm font-semibold text-white">
+            <h4 className="mb-3 text-sm lg:text-2xl font-semibold text-white">
               تابعونا عبر
             </h4>
             <div className="flex flex-wrap items-center gap-3">
@@ -127,7 +127,7 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-zinc-100 py-3">
         <div className="mx-auto max-w-6xl px-4">
-          <div className="flex flex-wrap items-center justify-center gap-8 text-center text-sm text-zinc-200 divide-x divide-zinc-600">
+          <div className="flex flex-wrap items-center justify-center gap-8 text-center text-zinc-200 divide-x divide-zinc-600">
             <span>حقوق النشر</span>
             <span>سياسة الخصوصية</span>
             <span>سياسة التعليقات</span>
