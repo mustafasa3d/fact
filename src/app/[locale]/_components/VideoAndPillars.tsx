@@ -1,15 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function VideoAndPillars() {
   return (
     <section className="bg-[#f7f7f7] py-8">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 md:grid-cols-2 lg:px-0">
-        <a
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 md:grid-cols-3 lg:px-0">
+        <Link
           href="#"
           aria-label="تشغيل الفيديو التعريفي للمركز"
-          className="group relative block overflow-hidden rounded-md bg-primary/10"
+          className="md:col-span-1 group relative block overflow-hidden rounded-md bg-primary/10"
         >
-          <div className="relative aspect-video w-full">
+          <div className="relative w-full h-full min-h-[210px]">
             <Image
               src="/assets/images/video-thumb.svg"
               alt="فيديو تعريفي"
@@ -29,15 +30,15 @@ export function VideoAndPillars() {
               </div>
             </div>
           </div>
-        </a>
+        </Link>
 
-        <div className="relative overflow-hidden rounded-md bg-white">
-          <div className="relative aspect-video w-full">
+        <div className="md:col-span-2 relative overflow-hidden rounded-md bg-white">
+          <div className="relative w-full aspect-7/3">
             <Image
-              src="/assets/images/pillars.svg"
+              src="/assets/images/whoweare/pillars.png"
               alt="أعمدة رمزية للثبات والقانون"
               fill
-              className="object-cover"
+              className="object-cover w-full"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>

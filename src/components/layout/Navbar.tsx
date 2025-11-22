@@ -25,7 +25,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-0">
         <Image
           src="/assets/images/navbar/logo.png"
-          className="h-16 w-48"
+          className="h-14 w-32 md:h-16 md:w-48"
           alt="FACT Center for Strategic Studies"
           width={240}
           height={120}

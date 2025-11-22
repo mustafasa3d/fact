@@ -69,3 +69,12 @@ body {
 input[type="search"]::placeholder {
   padding-left: 10px;
 }
+
+@layer components {
+  .title {
+    @apply text-3xl md:text-5xl font-bold text-primary mb-6;
+  }
+  .paragraph {
+    @apply text-xl md:text-[1.7rem] leading-8;
+  }
+}

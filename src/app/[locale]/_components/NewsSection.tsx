@@ -10,32 +10,38 @@ import "swiper/css/navigation";
 const news = [
   {
     id: 1,
-    title: "يكثّف العلماء جهودهم لجمع البيانات وتحليلها بهدف فهم التغيرات البيئية والمناخية",
+    title:
+      "يكثّف العلماء جهودهم لجمع البيانات وتحليلها بهدف فهم التغيرات البيئية والمناخية",
     img: "/assets/images/news/news-1.svg",
   },
   {
     id: 2,
-    title: "يكثّف العلماء جهودهم لجمع البيانات وتحليلها بهدف فهم التغيرات البيئية والمناخية",
+    title:
+      "يكثّف العلماء جهودهم لجمع البيانات وتحليلها بهدف فهم التغيرات البيئية والمناخية",
     img: "/assets/images/news/news-2.svg",
   },
   {
     id: 3,
-    title: "يكثّف العلماء جهودهم لجمع البيانات وتحليلها بهدف فهم التغيرات البيئية والمناخية",
+    title:
+      "يكثّف العلماء جهودهم لجمع البيانات وتحليلها بهدف فهم التغيرات البيئية والمناخية",
     img: "/assets/images/news/news-1.svg",
   },
   {
     id: 4,
-    title: "يكثّف العلماء جهودهم لجمع البيانات وتحليلها بهدف فهم التغيرات البيئية والمناخية",
+    title:
+      "يكثّف العلماء جهودهم لجمع البيانات وتحليلها بهدف فهم التغيرات البيئية والمناخية",
     img: "/assets/images/news/news-2.svg",
   },
   {
     id: 5,
-    title: "يكثّف العلماء جهودهم لجمع البيانات وتحليلها بهدف فهم التغيرات البيئية والمناخية",
+    title:
+      "يكثّف العلماء جهودهم لجمع البيانات وتحليلها بهدف فهم التغيرات البيئية والمناخية",
     img: "/assets/images/news/news-1.svg",
   },
   {
     id: 6,
-    title: "يكثّف العلماء جهودهم لجمع البيانات وتحليلها بهدف فهم التغيرات البيئية والمناخية",
+    title:
+      "يكثّف العلماء جهودهم لجمع البيانات وتحليلها بهدف فهم التغيرات البيئية والمناخية",
     img: "/assets/images/news/news-2.svg",
   },
 ];
@@ -45,43 +51,53 @@ export function NewsSection() {
     <section id="news" className="bg-white py-12">
       <div className="mx-auto max-w-6xl px-4 lg:px-0">
         <div className="mb-6 text-center lg:mb-8">
-          <h2 className="mb-2 text-2xl font-bold text-primary">آخر الأخبار والإعلانات</h2>
-          <p className="mx-auto max-w-3xl text-sm text-gray-600">
-            ابقَ على اطلاع بآخر أخبارنا التي تقدم رؤى معمقة حول أهم القضايا في مجالاتنا.
+          <h2 className="title">آخر الأخبار والإعلانات</h2>
+          <p className="paragraph">
+            ابقَ على اطلاع بآخر أخبارنا التي تقدم رؤى معمقة حول أهم القضايا في
+            مجالاتنا.
           </p>
         </div>
 
         <Swiper
           modules={[Navigation]}
-          navigation
+          // navigation
           spaceBetween={16}
           breakpoints={{
             0: { slidesPerView: 1 },
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
-            1280: { slidesPerView: 4 },
+            1280: { slidesPerView: 3.2 },
           }}
         >
           {news.map((n) => (
             <SwiperSlide key={n.id}>
               <article className="group relative overflow-hidden rounded-md">
-                <div className="relative aspect-4/3 w-full">
-                  <Image src={n.img} alt={n.title} fill className="object-cover" />
+                <div className="relative aspect-square w-full">
+                  <Image
+                    src={n.img}
+                    alt={n.title}
+                    fill
+                    className="object-cover"
+                  />
                   <div className="absolute inset-0 bg-black/40 transition-colors duration-300 group-hover:bg-black/35" />
                   <div className="absolute inset-0 flex items-end">
-                    <div className="w-full p-4 text-right text-white">
-                      <h3 className="line-clamp-2 text-base font-bold leading-7">
+                    <div className="w-full p-4 text-white">
+                      <h3 className="line-clamp-2 text-base font-bold leading-7" title={n.title}>
                         {n.title}
                       </h3>
-                      <div className="mt-3 flex justify-end">
+                      <div className="mt-3 flex">
                         <Link
                           href={`#news-${n.id}`}
-                          className="inline-flex items-center gap-2 rounded-md bg-white/90 px-3 py-1.5 text-xs font-semibold text-primary shadow-sm backdrop-blur hover:bg-white"
+                          className="inline-flex items-center gap-2 bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#0d4f3a]"
                         >
                           قراءة المزيد
-                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
-                            <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
+                          <Image
+                            src="/assets/images/latestarticle/eye.svg"
+                            alt="FACT Center for Strategic Studies"
+                            width={23}
+                            height={23}
+                            priority
+                          />
                         </Link>
                       </div>
                     </div>

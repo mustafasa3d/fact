@@ -32,7 +32,7 @@ export function Footer() {
             <div className="flex items-center gap-3">
               <div className="relative h-14 w-28">
                 <Image
-                  src="/assets/images/fact-logo.svg"
+                  src="/assets/images/whoweare/fact-logo.svg"
                   alt="FACT"
                   fill
                   className="object-contain"
@@ -94,7 +94,7 @@ export function Footer() {
                 { name: "instagram", path: mdiPath.instagram },
                 { name: "youtube", path: mdiPath.youtube },
               ].map((s) => (
-                <a
+                <Link
                   key={s.name}
                   href="#"
                   aria-label={s.name}
@@ -103,7 +103,7 @@ export function Footer() {
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                     <path d={s.path} />
                   </svg>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
