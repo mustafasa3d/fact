@@ -1,4 +1,3 @@
-"use client";
 
 import { Navbar } from "@/components/layout/navbar/Navbar";
 import { Hero } from "./_components/home/Hero";

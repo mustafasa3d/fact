@@ -2,6 +2,7 @@
   "locale": "en",
   "siteName": "FACT Center for Strategic Studies",
   "nav": {
+    "close": "Close",
     "about": "About Us",
     "research": "Research & Studies",
     "publications": "Publications",
@@ -37,6 +38,162 @@
       "news": "News & Announcements",
       "events": "Key Events",
       "partners": "Our Trusted Partners"
+    },
+    "aboutFact": {
+      "title": "Who We Are",
+      "subtitle": "FACT Center for Strategic Studies – Vision for Thinking, Solutions for the Future",
+      "description": "Established in early 2025 in London under the leadership of former Jordanian Minister Wajih Azaizeh, FACT brings together an elite group of researchers and experts. It focuses on strategic issues related to asylum and displacement, particularly the Palestinian refugee issue and UNRWA. The center conducts in-depth research on international conflicts and crises, with special attention to the Arab-Israeli conflict, the legal and human rights dimensions of the refugee crisis, and strategies for conflict resolution and peacebuilding."
+    },
+    "recentPublications": {
+      "title": "Recent Publications",
+      "description": "Discover our latest releases combining in-depth analysis and strategic insights on regional and international issues",
+      "latestBadge": "Latest",
+      "readMore": "Read More"
+    },
+
+    "publications": [
+      {
+        "title": "Palestinian Refugees 2025",
+        "desc": "A report reviewing the major humanitarian challenges facing Palestinian refugees and proposing practical solutions for stability and human dignity."
+      },
+      {
+        "title": "Palestinian Refugees 2025",
+        "desc": "A report reviewing the major humanitarian challenges facing Palestinian refugees and proposing practical solutions for stability and human dignity."
+      },
+      {
+        "title": "Palestinian Refugees 2025",
+        "desc": "A report reviewing the major humanitarian challenges facing Palestinian refugees and proposing practical solutions for stability and human dignity."
+      }
+    ],
+    "latestBooks": {
+      "title": "Our Latest Books",
+      "description": "Stay updated with our latest releases offering deep insights into the most critical issues in our field.",
+      "viewAll": "View All"
+    },
+
+    "books": [
+      {
+        "title": "Palestinian Education Between Occupation and Resistance",
+        "author": "Mohammed Ahmed Siyam"
+      },
+      {
+        "title": "Palestinian Education Between Occupation and Resistance",
+        "author": "Mohammed Ahmed Siyam"
+      },
+      {
+        "title": "Palestinian Education Between Occupation and Resistance",
+        "author": "Mohammed Ahmed Siyam"
+      }
+    ],
+
+    "newsSection": {
+      "title": "Latest News & Announcements",
+      "description": "Stay informed with our latest updates offering deep insights into the most critical issues in our fields.",
+      "readMore": "Read More"
+    },
+
+    "news": [
+      {
+        "title": "Scientists intensify efforts to collect and analyze data to understand environmental and climate changes"
+      },
+      {
+        "title": "Scientists intensify efforts to collect and analyze data to understand environmental and climate changes"
+      },
+      {
+        "title": "Scientists intensify efforts to collect and analyze data to understand environmental and climate changes"
+      },
+      {
+        "title": "Scientists intensify efforts to collect and analyze data to understand environmental and climate changes"
+      },
+      {
+        "title": "Scientists intensify efforts to collect and analyze data to understand environmental and climate changes"
+      },
+      {
+        "title": "Scientists intensify efforts to collect and analyze data to understand environmental and climate changes"
+      }
+    ],
+    "eventsSlider": {
+      "title": "Upcoming Events",
+      "viewAll": "View All",
+      "prevButton": "Previous",
+      "nextButton": "Next"
+    },
+
+    "events": [
+      {
+        "date": "April 3, 2026",
+        "title": "International Conference on Refugees and Conflicts"
+      },
+      {
+        "date": "May 15, 2026",
+        "title": "Seminar: The Future of UNRWA and Palestinian Refugees"
+      },
+      {
+        "date": "June 22, 2026",
+        "title": "Workshop: Peacebuilding Strategies in the Middle East"
+      },
+      {
+        "date": "July 10, 2026",
+        "title": "Panel Discussion: Legal Rights of Refugees in International Law"
+      },
+      {
+        "date": "August 5, 2026",
+        "title": "Launch: Annual Report on Palestinian Refugees 2026"
+      },
+      {
+        "date": "September 18, 2026",
+        "title": "Global Conference: Displacement and Asylum in a Changing World"
+      }
+    ],
+    "trustedPartners": {
+      "title": "Our Trusted Partners",
+      "description": "Collaborating with strategic partners to deliver results that meet the highest standards."
+    },
+
+    "partnersAlt": {
+      "1": "UNRWA",
+      "2": "Human Rights Council - HRC",
+      "3": "WikiPalestine"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "placeholder": "Email Address",
+      "subscribe": "Subscribe"
+    },
+    "logoAlt": "FACT Center for Strategic Studies",
+
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About Us",
+      "research": "Research & Studies",
+      "publications": "Publications",
+      "events": "Events",
+      "blog": "Blog",
+      "contact": "Contact Us"
+    },
+
+    "contact": {
+      "title": "Contact",
+      "email": "fact@email.com",
+      "phone": "+962 7000 000",
+      "address": "Amman, Jordan."
+    },
+
+    "social": {
+      "title": "Follow Us",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "x": "X (Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    },
+
+    "bottomLinks": {
+      "copyright": "Copyright",
+      "privacy": "Privacy Policy",
+      "comments": "Comments Policy",
+      "terms": "Terms & Conditions"
     }
   }
 }

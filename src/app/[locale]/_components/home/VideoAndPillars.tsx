@@ -1,10 +1,11 @@
+import { Container } from "@/components/shared/Container";
 import Image from "next/image";
 import Link from "next/link";
 
 export function VideoAndPillars() {
   return (
     <section className="bg-[#f7f7f7] py-8">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 md:grid-cols-3 lg:px-0">
+      <Container className="grid grid-cols-1 gap-6 md:grid-cols-3">
         <Link
           href="#"
           aria-label="تشغيل الفيديو التعريفي للمركز"
@@ -43,7 +44,7 @@ export function VideoAndPillars() {
             />
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
