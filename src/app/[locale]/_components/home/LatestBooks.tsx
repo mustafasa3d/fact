@@ -29,7 +29,7 @@ export async function LatestBooks() {
   ];
 
   return (
-    <section id="latest-books" className="bg-[#f7f7f7] py-12">
+    <section id="latest-books" className="bg-white py-12">
       <Container>
         <div className="mb-8 text-center lg:mb-10">
           <h2 className="title">{t("title")}</h2>
@@ -42,7 +42,7 @@ export async function LatestBooks() {
           {books.map((b) => (
             <article
               key={b.id}
-              className="group overflow-hidden rounded-md bg-[#f7f7f7]"
+              className="group overflow-hidden rounded-md bg-white"
             >
               <div className="relative aspect-square lg:aspect-3/4 w-full">
                 <Image
@@ -58,7 +58,7 @@ export async function LatestBooks() {
                       className="text-center mb-3.5 line-clamp-2 text-base md:text-2xl font-bold"
                       title={b.title}
                     >
-                      {b.title}dsadscd
+                      {b.title}
                     </h3>
                     <div className="flex items-center justify-center gap-2 text-xs opacity-90">
                       <span className="text-base md:text-xl">{b.author}</span>

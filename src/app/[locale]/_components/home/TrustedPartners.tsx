@@ -16,7 +16,7 @@ export function TrustedPartners() {
   const ta = useTranslations("home.partnersAlt");
 
   return (
-    <section id="partners" className="bg-[#f7f7f7] py-12">
+    <section id="partners" className="py-12">
       <div className="mx-auto max-w-6xl px-4 text-center lg:px-0 mb-10">
         <h2 className="title">{t("title")}</h2>
         <p className="paragraph">{t("description")}</p>

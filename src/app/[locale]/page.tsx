@@ -11,9 +11,9 @@ import { TrustedPartners } from "./_components/home/TrustedPartners";
 import { Footer } from "@/components/layout/footer/Footer";
 
 export default function LocaleHome() {
-  
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <Navbar />
       <Hero />
       <AboutFact />

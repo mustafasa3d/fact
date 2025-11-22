@@ -29,7 +29,7 @@ export async function RecentPublications() {
   ];
 
   return (
-    <section id="publications" className="bg-[#f7f7f7] py-12">
+    <section id="publications" className="py-12">
       <Container>
         <div className="mb-8 text-center lg:mb-10">
           <h2 className="title">{t("title")}</h2>
@@ -42,7 +42,7 @@ export async function RecentPublications() {
           {items.map((p) => (
             <article
               key={p.id}
-              className="group overflow-hidden bg-[#f7f7f7] transition hover:shadow-md"
+              className="group overflow-hidden transition hover:shadow-md"
             >
               <div className="relative aspect-16/10 w-full">
                 <Image src={p.img} alt={p.title} fill className="object-cover" />

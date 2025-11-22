@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function VideoAndPillars() {
   return (
-    <section className="bg-[#f7f7f7] py-8">
+    <section className="py-8">
       <Container className="grid grid-cols-1 gap-6 md:grid-cols-3">
         <Link
           href="#"
@@ -24,7 +24,7 @@ export function VideoAndPillars() {
               فيديو
             </span>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="grid place-items-center rounded-full bg-white/90 text-primary shadow-lg transition-transform duration-300 group-hover:scale-105" style={{width:64,height:64}}>
+              <div className="grid place-items-center rounded-full bg-white/90 text-primary shadow-lg transition-transform duration-300 group-hover:scale-105" style={{ width: 64, height: 64 }}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                   <path d="M8 5v14l11-7z" />
                 </svg>

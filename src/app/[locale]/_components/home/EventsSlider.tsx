@@ -25,7 +25,7 @@ export function EventsSlider() {
   }));
 
   return (
-    <section id="events" className="bg-[#f7f7f7] py-12">
+    <section id="events" className="py-12">
       <Container>
         <div className="grid grid-cols-12">
           <div className="relative col-span-12 lg:col-span-4 items-center justify-center lg:w-[21.5rem] xl:w-[22rem] rtl:ml-3 ltr:mr-3 max-lg:mb-5">

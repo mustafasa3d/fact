@@ -23,7 +23,7 @@ export function NewsSection() {
   ];
 
   return (
-    <section id="news" className="bg-[#f7f7f7] py-12">
+    <section id="news" className="py-12">
       <Container>
         <div className="mb-6 text-center lg:mb-8">
           <h2 className="title">{t("title")}</h2>
