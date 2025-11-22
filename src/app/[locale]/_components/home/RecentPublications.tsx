@@ -3,33 +3,33 @@ import { CustomBtnLink } from "@/components/shared/CustomBtnLink";
 import { Container } from "@/components/shared/Container";
 import { getTranslations } from "next-intl/server";
 
-export async function  RecentPublications() {
+export async function RecentPublications() {
   const t = await getTranslations("home.recentPublications");
-  const tp = await getTranslations("home.publications"); 
+  const tp = await getTranslations("home.publications");
 
   const items = [
     {
       id: 1,
       title: tp("0.title"),
       desc: tp("0.desc"),
-      img: "/assets/images/publications/pub-1.svg",
+      img: "/assets/images/publications/pub-1.png",
     },
     {
       id: 2,
       title: tp("1.title"),
       desc: tp("1.desc"),
-      img: "/assets/images/publications/pub-2.svg",
+      img: "/assets/images/publications/pub-2.jpg",
     },
     {
       id: 3,
       title: tp("2.title"),
       desc: tp("2.desc"),
-      img: "/assets/images/publications/pub-3.svg",
+      img: "/assets/images/publications/pub-3.png",
     },
   ];
 
   return (
-    <section id="publications" className="bg-white py-12">
+    <section id="publications" className="bg-[#f7f7f7] py-12">
       <Container>
         <div className="mb-8 text-center lg:mb-10">
           <h2 className="title">{t("title")}</h2>
@@ -42,15 +42,15 @@ export async function  RecentPublications() {
           {items.map((p) => (
             <article
               key={p.id}
-              className="group overflow-hidden bg-white shadow-sm ring-1 ring-gray-200 transition hover:shadow-md"
+              className="group overflow-hidden bg-[#f7f7f7] transition hover:shadow-md"
             >
               <div className="relative aspect-16/10 w-full">
                 <Image src={p.img} alt={p.title} fill className="object-cover" />
-                <span className="absolute right-3 top-3 rounded bg-red-600 px-2 py-1 text-xs font-semibold text-white">
+                <span className="absolute right-0 top-3 bg-red-600 px-2 py-1 text-xs font-semibold text-white">
                   {t("latestBadge")}
                 </span>
               </div>
-              <div className="p-4">
+              <div className="py-3">
                 <h3
                   className="mb-4 line-clamp-2 text-lg md:text-2xl font-extrabold text-primary"
                   title={p.title}
@@ -63,7 +63,7 @@ export async function  RecentPublications() {
                 >
                   {p.desc}
                 </p>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center">
                   <div />
                   <CustomBtnLink
                     href={`#pub-${p.id}`}

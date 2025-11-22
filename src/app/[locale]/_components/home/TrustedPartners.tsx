@@ -5,12 +5,10 @@ import Marquee from "react-fast-marquee";
 import { useTranslations } from "next-intl";
 
 const partners = [
-  { id: 1, src: "/assets/partners/partner-1.svg" },
-  { id: 2, src: "/assets/partners/partner-2.svg" },
-  { id: 3, src: "/assets/partners/partner-3.svg" },
-  { id: 4, src: "/assets/partners/partner-1.svg" },
-  { id: 5, src: "/assets/partners/partner-2.svg" },
-  { id: 6, src: "/assets/partners/partner-3.svg" },
+  { id: 1, src: "/assets/partners/partner-1.png" },
+  { id: 2, src: "/assets/partners/partner-2.png" },
+  { id: 3, src: "/assets/partners/partner-3.png" },
+  { id: 4, src: "/assets/partners/partner-4.png" },
 ];
 
 export function TrustedPartners() {
@@ -18,7 +16,7 @@ export function TrustedPartners() {
   const ta = useTranslations("home.partnersAlt");
 
   return (
-    <section id="partners" className="bg-white py-12">
+    <section id="partners" className="bg-[#f7f7f7] py-12">
       <div className="mx-auto max-w-6xl px-4 text-center lg:px-0 mb-10">
         <h2 className="title">{t("title")}</h2>
         <p className="paragraph">{t("description")}</p>

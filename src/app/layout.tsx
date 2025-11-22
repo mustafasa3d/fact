@@ -32,7 +32,7 @@ export default async function RootLayout({
       dir={locale === "ar" ? "rtl" : "ltr"}
       className={`${tajawal.className} ${tajawal.variable} ${geistMono.variable} font-sans`}
     >
-      <body className={`antialiased`}>
+      <body className={`antialiased bg-[#f7f7f7]`}>
         {children}
       </body>
     </html>
