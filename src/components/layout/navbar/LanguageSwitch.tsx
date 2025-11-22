@@ -1,10 +1,9 @@
-import { usePathname } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 
 function LanguageSwitch() {
   const t = useTranslations("nav");
-  
+
   const locale = useLocale();
 
   const toggleLanguage = () => {
@@ -29,10 +28,7 @@ function LanguageSwitch() {
         priority
       />
 
-      <div
-        className="hidden lg:inline-flex items-center gap-1 rounded-full text-xs font-medium text-white shadow-sm hover:bg-[#0d4f3a]"
-      >
-        <span>{locale}</span>
+      <div className="hidden lg:inline-flex items-center gap-1 rounded-full text-xs font-medium text-white shadow-sm hover:bg-[#0d4f3a]">
         {t("english")}
         <Image
           src="/assets/images/navbar/world.svg"

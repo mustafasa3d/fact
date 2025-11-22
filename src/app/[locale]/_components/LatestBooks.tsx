@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { CustomBtnLink } from "@/components/CustomBtnLink";
 
 const books = [
   {
@@ -53,9 +53,9 @@ export function LatestBooks() {
         </div>
 
         <div className="mt-8 flex justify-center">
-          <Link href="#all-books" className="bg-primary px-6 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#0d4f3a]">
+          <CustomBtnLink href="#all-books" className="px-6 py-2 shadow-sm">
             عرض الكل
-          </Link>
+          </CustomBtnLink>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CustomBtnLink } from "@/components/CustomBtnLink";
 
 export function Footer() {
   return (
@@ -28,12 +29,12 @@ export function Footer() {
             placeholder="البريد الإلكتروني"
             className="min-h-12 flex-1 rounded-md border border-white bg-white px-4 text-sm text-zinc-900 placeholder:text-zinc-500 focus:outline-none"
           />
-          <button
+          <CustomBtnLink
             type="submit"
-            className="min-h-12 rounded-md bg-primary px-6 text-sm font-semibold text-white transition-colors hover:bg-[#0d4f3a]"
+            className="min-h-12 rounded-md px-6"
           >
             اشترك
-          </button>
+          </CustomBtnLink>
         </form>
       </div>
 

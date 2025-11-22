@@ -1,6 +1,6 @@
 "use client";
 
-import { Navbar } from "@/components/layout/Navbar";
+import { Navbar } from "@/components/layout/navbar/Navbar";
 import { Hero } from "./_components/Hero";
 import { AboutFact } from "./_components/AboutFact";
 import { VideoAndPillars } from "./_components/VideoAndPillars";

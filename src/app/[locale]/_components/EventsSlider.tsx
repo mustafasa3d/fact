@@ -7,8 +7,9 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import EventCard from "./EventCard";
-import Link from "next/link";
+import { CustomBtnLink } from "@/components/CustomBtnLink";
 import Image from "next/image";
+import Link from "next/link";
 
 const events = Array.from({ length: 6 }).map((_, i) => ({
   id: i + 1,
@@ -95,12 +96,13 @@ export function EventsSlider() {
               </svg>
             </button>
           </div>
-          <Link
+          <CustomBtnLink
+            Com={Link}
             href="#all-events"
-            className="rounded-md bg-primary px-5 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#0d4f3a]"
+            className="rounded-md px-5 py-2 shadow-sm"
           >
             عرض الكل
-          </Link>
+          </CustomBtnLink>
         </div>
       </div>
     </section>

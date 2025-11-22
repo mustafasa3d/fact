@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { CustomBtnLink } from "@/components/CustomBtnLink";
 
 const items = [
   {
@@ -56,19 +56,17 @@ export function RecentPublications() {
                 <p className="mb-4 line-clamp-3 text-sm md:text-base text-gray-700" title={p.desc}>{p.desc}</p>
                 <div className="flex items-center justify-between">
                   <div />
-                  <Link
+                  <CustomBtnLink
                     href={`#pub-${p.id}`}
-                    className="inline-flex items-center gap-2 bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#0d4f3a]"
+                    className="px-4 py-2 shadow-sm"
+                    iconSrc="/assets/images/latestarticle/eye.svg"
+                    iconAlt="FACT Center for Strategic Studies"
+                    iconWidth={23}
+                    iconHeight={23}
+                    iconPriority
                   >
                     قراءة المزيد
-                    <Image src={'/asset/'}
-                      src="/assets/images/latestarticle/eye.svg"
-                      alt="FACT Center for Strategic Studies"
-                      width={23}
-                      height={23}
-                      priority 
-                      />
-                  </Link>
+                  </CustomBtnLink>
                 </div>
               </div>
             </article>
