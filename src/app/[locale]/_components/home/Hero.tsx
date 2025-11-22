@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import HeroTab from "./HeroTab";
 
 export function Hero() {
   const t = useTranslations("home");

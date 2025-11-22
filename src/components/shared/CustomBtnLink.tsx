@@ -3,6 +3,7 @@
 import type React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 type CustomBtnLinkProps = {
   children: React.ReactNode;
@@ -31,7 +32,7 @@ export function CustomBtnLink({
   const baseClasses =
     "inline-flex items-center gap-2 bg-primary text-sm font-semibold text-white transition-colors hover:bg-[#0d4f3a]";
 
-  const classes = `${baseClasses} ${className}`.trim();
+  const classes = cn(baseClasses, className);
 
   const Component = Com as React.ElementType;
 

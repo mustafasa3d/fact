@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { CustomBtnLink } from "@/components/CustomBtnLink";
+import { CustomBtnLink } from "@/components/shared/CustomBtnLink";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";

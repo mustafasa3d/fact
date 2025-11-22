@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CustomBtnLink } from "@/components/CustomBtnLink";
+import { CustomBtnLink } from "@/components/shared/CustomBtnLink";
 
 const items = [
   {

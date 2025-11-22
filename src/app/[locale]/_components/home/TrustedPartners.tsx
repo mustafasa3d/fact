@@ -29,7 +29,7 @@ export function TrustedPartners() {
           speed={40}
           gradient
           gradientWidth={80}
-          gradientColor={[255, 255, 255]}
+          gradientColor="#ffffff"
         >
           {partners.map((p) => (
             <div key={p.id} className="mx-10 flex items-center">

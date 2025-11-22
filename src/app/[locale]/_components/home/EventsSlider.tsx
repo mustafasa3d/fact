@@ -7,7 +7,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import EventCard from "./EventCard";
-import { CustomBtnLink } from "@/components/CustomBtnLink";
+import { CustomBtnLink } from "@/components/shared/CustomBtnLink";
 import Image from "next/image";
 import Link from "next/link";
 

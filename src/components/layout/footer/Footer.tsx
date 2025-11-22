@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CustomBtnLink } from "@/components/CustomBtnLink";
+import { CustomBtnLink } from "@/components/shared/CustomBtnLink";
 
 export function Footer() {
   return (
