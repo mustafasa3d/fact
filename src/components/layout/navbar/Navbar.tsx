@@ -20,8 +20,8 @@ export function Navbar() {
     { href: `/${locale}/publications`, label: t("publications") },
     { href: `/${locale}/traffic-memory`, label: t("memory") },
     { href:  `/${locale}/media-center`, label: t("mediaCenter") },
-    { href: "#blog", label: t("blog") },
-    { href: "#contact", label: t("contact") },
+    // { href: "#blog", label: t("blog") },
+    { href: `/${locale}/contact-us`, label: t("contact") },
   ];
 
   return (
