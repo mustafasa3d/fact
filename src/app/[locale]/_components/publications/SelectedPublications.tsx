@@ -30,11 +30,11 @@ export default function SelectedPublications() {
     ];
 
     return (
-        <section className='py-12 bg-[#F5F7F6]'>
+        <section className='py-8 lg:py-12 bg-[#F5F7F6]'>
             <Container>
                 <div className='text-center mb-10'>
                     <h2 className='title'>{t('title')}</h2>
-                    <p className='paragraph'>{t('description')}</p>
+                    <p className='paragraph max-w-[1000px] mx-auto'>{t('description')}</p>
                 </div>
 
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

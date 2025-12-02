@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import ContactForm from "../_components/contact/ContactForm";
 import { CustomPageHeader } from "../_components/home/CustomPageHeader";
+import Image from "next/image";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("aboutUs");
@@ -33,12 +34,30 @@ export default async function AboutUsPage() {
 
   return (
     <div className="min-h-screen">
-      <CustomPageHeader title={"تواصل معنا"} />
+      <div
+        className="relative pt-10 flex items-center bg-white"
+      >
+        {/* Dark Overlay */}
+        {/* <div className="absolute inset-0 bg-white/50" /> */}
 
-      <section className="py-12">
+        <Container>
+          {/* Content */}
+          <div className="relative flex items-center justify-between z-10">
+            <h1 className="title flex-1 text-4xl md:text-5xl lg:text-[3.5rem] font-bold">
+              تواصل معنا
+            </h1>
+            <div className="flex-1 relative">
+              <Image className="w-full h-full object-contain" src="/assets/images/contact/flagf.svg" alt="phone" width={70} height={70} />
+              <Image className="absolute top-0 right-0 w-full h-full object-contain" src="/assets/images/contact/phone2.svg" alt="phone" width={70} height={70} />
+            </div>
+          </div>
+        </Container>
+      </div>
+
+      <section className="py-8 lg:py-12">
         <Container>
           <div className="flex flex-col gap-2 pt-10 pb-14">
-            <h2 className="title">نودّ سماعكم</h2>
+            <h2 className="title text-[#676767]">نودّ سماعكم</h2>
             <p className="paragraph">
               يسعدنا في مركز الحقائق للدراسات الاستراتيجية (FACT) استقبال
               استفساراتكم، طلبات التعاون، المقابلات الإعلامية، أو الحصول على
@@ -49,36 +68,19 @@ export default async function AboutUsPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-gray-50">
+      <section className="py-8 lg:py-12">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto lg:gap-10 px-10">
             {/* Email Card */}
-            <div className="bg-white rounded-lg shadow-sm p-8 flex flex-col items-center justify-center gap-4 hover:shadow-md transition-shadow">
-              <div className="w-20 h-20 bg-[#306E57] rounded-full flex items-center justify-center">
-                <svg
-                  width="40"
-                  height="40"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="3"
-                    y="5"
-                    width="18"
-                    height="14"
-                    rx="2"
-                    stroke="white"
-                    strokeWidth="2"
-                  />
-                  <path
-                    d="M3 7L12 13L21 7"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+            <div className="bg-white shadow-sm p-8 flex flex-col items-center justify-center gap-4 hover:shadow-md transition-shadow">
+              <div className="w-20 h-20 flex items-center justify-center">
+                <Image
+                  className="w-10 h-10 lg:w-[70px] lg:h-[70px]"
+                  src="/assets/images/contact/email.svg"
+                  alt="Email"
+                  width={70}
+                  height={70}
+                />
               </div>
               <p className="text-xl text-gray-700 font-medium">
                 fact@email.com
@@ -86,54 +88,29 @@ export default async function AboutUsPage() {
             </div>
 
             {/* Location Card */}
-            <div className="bg-white rounded-lg shadow-sm p-8 flex flex-col items-center justify-center gap-4 hover:shadow-md transition-shadow">
-              <div className="w-20 h-20 bg-[#306E57] rounded-full flex items-center justify-center">
-                <svg
-                  width="40"
-                  height="40"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="white"
-                  />
-                  <circle
-                    cx="12"
-                    cy="9"
-                    r="2.5"
-                    stroke="#306E57"
-                    strokeWidth="2"
-                    fill="#306E57"
-                  />
-                </svg>
+            <div className="bg-white shadow-sm p-8 flex flex-col items-center justify-center gap-4 hover:shadow-md transition-shadow">
+              <div className="w-20 h-20 flex items-center justify-center">
+                <Image
+                  className="w-10 h-10 lg:w-[70px] lg:h-[70px]"
+                  src="/assets/images/contact/location.svg"
+                  alt="Email"
+                  width={70}
+                  height={70}
+                />
               </div>
               <p className="text-xl text-gray-700 font-medium">الأردن ، عمان</p>
             </div>
 
             {/* Phone Card */}
-            <div className="bg-white rounded-lg shadow-sm p-8 flex flex-col items-center justify-center gap-4 hover:shadow-md transition-shadow">
-              <div className="w-20 h-20 bg-[#306E57] rounded-full flex items-center justify-center">
-                <svg
-                  width="40"
-                  height="40"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22 16.92V19.92C22 20.4696 21.5523 20.9173 21.0027 20.9201C18.4537 20.9452 15.9419 20.2419 13.7293 18.8795C11.6751 17.6276 9.95987 15.9124 8.70801 13.8582C7.3425 11.6396 6.63874 9.12015 6.66401 6.56403C6.66679 6.01463 7.11454 5.56688 7.66394 5.56688H10.6639C10.9296 5.56688 11.1683 5.74093 11.2609 6.00043C11.6189 7.01772 12.1313 7.9796 12.7839 8.85857C12.9461 9.08901 12.8977 9.40265 12.6778 9.57526L11.1878 10.7353C12.3723 12.8785 14.0454 14.5516 16.1886 15.7361L17.3486 14.2461C17.5212 14.0262 17.8349 13.9778 18.0653 14.14C18.9443 14.7926 19.9061 15.305 20.9234 15.663C21.1829 15.7556 21.357 15.9943 21.357 16.26L22 16.92Z"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+            <div className="bg-white shadow-sm p-8 flex flex-col items-center justify-center gap-4 hover:shadow-md transition-shadow">
+              <div className="w-20 h-20 flex items-center justify-center">
+                <Image
+                  className="w-10 h-10 lg:w-[70px] lg:h-[70px]"
+                  src="/assets/images/contact/phone.svg"
+                  alt="Email"
+                  width={70}
+                  height={70}
+                />
               </div>
               <p className="text-xl text-gray-700 font-medium">920021500</p>
             </div>

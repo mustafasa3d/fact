@@ -52,12 +52,12 @@ export default async function AboutUsPage() {
         <CustomBtnLink type="button">تواصل معنا</CustomBtnLink>
       </CustomAboutSection>
 
-      <section className="py-12">
+      <section className="py-8 lg:py-12">
         <Container>
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-0 pt-10 pb-14">
-            <div>
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-0 pb-14">
+            <div className="mb-5 lg:mb-11">
               <h2 className="title">آخر الأخبار والإعلانات</h2>
-              <p className="lg:text-2xl">
+              <p className="lg:text-2xl text-[#6A6A6A]">
                 ابق على اطلاع بآخر أخبارنا التي تقدم رؤى معمّقة{" "}
               </p>
             </div>
@@ -74,30 +74,8 @@ export default async function AboutUsPage() {
                 className="w-[105px] h-[66px] bg-[#306E57] border border-[#306E57] hover:bg-[#275847] transition-colors flex items-center justify-center"
                 aria-label="بحث"
               >
-                <svg
-                  width="39"
-                  height="39"
-                  viewBox="0 0 39 39"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.5 6.5C6.5 6.5 6.5 32.5 32.456 32.5M32.456 32.5L25.5 25.5M32.456 32.5L25.5 39.5"
-                    stroke="white"
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    transform="rotate(-45 19.5 19.5)"
-                  />
-                  <circle
-                    cx="16"
-                    cy="16"
-                    r="9.5"
-                    stroke="white"
-                    strokeWidth="3"
-                    fill="none"
-                  />
-                </svg>
+                
+                <svg className="w-6 h-6 lg:w-[24px] lg:h-[24px]" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="none" stroke="#d9e8e2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314"/></svg>
               </button>
 
               {/* Filter Button */}
@@ -106,17 +84,19 @@ export default async function AboutUsPage() {
                 aria-label="فلترة"
               >
                 <svg
+                className="w-[78px] h-[78px]"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="78"
                   height="78"
-                  viewBox="0 0 78 78"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
                 >
                   <path
-                    d="M8.9375 10.4423L8.9375 67.561L69.0625 67.561L69.0625 10.4423L49.5625 32.4985L49.5625 61.0673L28.4375 61.0673L28.4375 32.4985L8.9375 10.4423Z"
-                    stroke="#306E57"
-                    strokeWidth="3"
                     fill="none"
+                    stroke="#306E57"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke-width="1.5"
+                    d="M21.25 12H8.895m-4.361 0H2.75m18.5 6.607h-5.748m-4.361 0H2.75m18.5-13.214h-3.105m-4.361 0H2.75m13.214 2.18a2.18 2.18 0 1 0 0-4.36a2.18 2.18 0 0 0 0 4.36Zm-9.25 6.607a2.18 2.18 0 1 0 0-4.36a2.18 2.18 0 0 0 0 4.36Zm6.607 6.608a2.18 2.18 0 1 0 0-4.361a2.18 2.18 0 0 0 0 4.36Z"
                   />
                 </svg>
               </button>
@@ -146,11 +126,11 @@ export default async function AboutUsPage() {
         </Container>
       </section>
 
-      <section className="py-12">
+      <section className="py-8 lg:py-12">
         <Container>
           <div className="mb-5 lg:mb-11">
             <h2 className="title">اهم الفعاليات</h2>
-            <p className="lg:text-2xl">ابق على اطلاع بآخر فعاليتنا</p>
+            <p className="lg:text-2xl text-[#6A6A6A]">ابق على اطلاع بآخر فعاليتنا</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -161,11 +141,11 @@ export default async function AboutUsPage() {
         </Container>
       </section>
 
-      <section className="py-12">
+      <section className="py-8 lg:py-12">
         <Container>
           <div className="mb-5 lg:mb-11">
             <h2 className="title">مكتبة الصور والفيديو</h2>
-            <p className="lg:text-2xl">
+            <p className="lg:text-2xl text-[#6A6A6A]">
               لحظات ميدانية وأحداث بحثية من أعمال FACT.
             </p>
           </div>

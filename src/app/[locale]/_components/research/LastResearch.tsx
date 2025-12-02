@@ -27,7 +27,7 @@ function LastResearch() {
     ];
 
     return (
-        <section className='py-12'>
+        <section className='py-8 lg:py-12'>
             <Container>
                 <div className='text-center mb-10'>
                     <h2 className='title'>اخر الأبحاث والدراسات</h2>

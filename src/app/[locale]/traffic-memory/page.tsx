@@ -106,9 +106,9 @@ export default async function TrafficMemoryPage() {
         </Container>
       </section>
 
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:pb-20 md:pt-5 bg-white">
         <Container>
-          <h2 className="title">ماذا تشمل الذاكرة المرورية؟</h2>
+          <h2 className="title mb-3 lg:mb-10">ماذا تشمل الذاكرة المرورية؟</h2>
           <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-x-28">
             {fieldsData.map((field, index) => (
               <FieldCard key={index} data={field} />

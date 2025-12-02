@@ -60,7 +60,7 @@ export default function ContactForm() {
               required: "الاسم مطلوب",
               minLength: { value: 2, message: "الاسم يجب أن يكون حرفين على الأقل" },
             })}
-            className="w-full bg-white px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#306E57] text-right"
+            className="w-full bg-white px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#306E57] text-right"
             placeholder="اسمك الكامل"
           />
           {errors.name && (
@@ -88,7 +88,7 @@ export default function ContactForm() {
                 message: "رقم الجوال غير صحيح",
               },
             })}
-            className="w-full bg-white px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#306E57] text-right"
+            className="w-full bg-white px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#306E57] text-right"
             placeholder="00000000"
           />
           {errors.phone && (
@@ -116,7 +116,7 @@ export default function ContactForm() {
                 message: "البريد الإلكتروني غير صحيح",
               },
             })}
-            className="w-full bg-white px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#306E57]"
+            className="w-full bg-white px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#306E57]"
             placeholder="بريدك"
           />
           {errors.email && (
@@ -144,7 +144,7 @@ export default function ContactForm() {
                 message: "الرسالة يجب أن تكون 10 أحرف على الأقل",
               },
             })}
-            className="w-full bg-white px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#306E57] text-right resize-none"
+            className="w-full bg-white px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#306E57] text-right resize-none"
             placeholder="اكتب هنا ..."
           />
           {errors.message && (
@@ -158,7 +158,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-[#306E57] text-white text-xl font-medium py-4 rounded-md hover:bg-[#275847] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-[#306E57] text-white text-xl font-medium py-4 hover:bg-[#275847] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? "جاري الإرسال..." : "إرسال"}
         </button>

@@ -28,7 +28,7 @@ export async function RecentPublications() {
   ];
 
   return (
-    <section id="publications" className="py-12">
+    <section id="publications" className="py-8 lg:py-12">
       <Container>
         <div className="mb-8 text-center lg:mb-10">
           <h2 className="title">{t("title")}</h2>

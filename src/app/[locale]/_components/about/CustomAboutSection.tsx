@@ -99,7 +99,7 @@ export function CustomAboutSection({
               {paragraphs.map((paragraph, index) => (
                 <p
                   key={index}
-                  className="text-lg lg:text-[30px] lg:leading-[1.4] text-[#1b4332]"
+                  className="text-lg lg:text-[30px] lg:leading-[1.4] text-[#1B4332]"
                 >
                   {paragraph}
                 </p>
