@@ -30,7 +30,7 @@ export function CustomBtnLink({
   ...props
 }: CustomBtnLinkProps) {
   const baseClasses =
-    "inline-flex items-center gap-2 bg-primary text-sm font-semibold text-white transition-colors hover:bg-[#0d4f3a]";
+    "inline-flex items-center gap-2 bg-primary text-sm font-semibold xl:font-bold xl:text-xl text-white transition-colors hover:bg-[#0d4f3a] px-3 py-2 lg:px-6 lg:py-3";
 
   const classes = cn(baseClasses, className);
 
@@ -49,8 +49,8 @@ export function CustomBtnLink({
 
   return (
     <Component className={classes} {...props}>
-      {children}
       {icon}
+      {children}
     </Component>
   );
 }

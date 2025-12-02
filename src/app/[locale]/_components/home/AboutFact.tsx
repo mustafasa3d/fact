@@ -10,10 +10,11 @@ export async function AboutFact() {
   return (
     <section
       id="about"
-      className="relative bg-[url('/assets/images/whoweare/bg.svg')]"
+      className="relative bg-[url('/assets/images/whoweare/bg.svg')] bg-no-repeat bg-cover"
     >
-      <div className="relative border-t border-white/10 bg-white text-gray-900 h-0">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 md:grid-cols-4 -mt-15 border-2 border-white">
+      <Container>
+        <div className="relative border-t border-white/10 bg-white text-gray-900 h-0">
+        <div className="mx-auto grid grid-cols-2 md:grid-cols-4 -mt-15 border-2 lg:border-3 border-white">
           <HeroTab
             active={activetab === "1"}
             imgSrc="/assets/images/hero/s1.svg"
@@ -31,22 +32,37 @@ export async function AboutFact() {
           </HeroTab>
         </div>
       </div>
+      </Container>
 
-      <Container className="pt-64! md:pt-48! pb-14!">
-        <div className="mb-8 flex items-center justify-center">
-          <Image
-            className=" aspect-6/2 "
-            src="/assets/images/whoweare/fact-logo.svg"
-            alt="FACT Center for Strategic Studies"
-            width={623}
-            height={228}
-            priority
+      <div className="pt-80! md:pt-48! mb-8 flex items-center justify-center relative">
+        <Image
+          className="max-md:hidden max-md:aspect-6/2 absolute right-0 w-[378px] h-[71px]"
+          src="/assets/images/whoweare/Layer-fact.svg"
+          alt="FACT Center for Strategic Studies"
+          width={378}
+          height={71}
           />
-        </div>
+        <Image
+          className="max-md:aspect-6/2"
+          src="/assets/images/whoweare/fact-logo.svg"
+          alt="FACT Center for Strategic Studies"
+          width={623}
+          height={228}
+          priority
+          />
+        <Image
+          className="max-md:hidden max-md:aspect-6/2 absolute left-0 w-[378px] h-[71px]"
+          src="/assets/images/whoweare/Layer-fact.svg"
+          alt="FACT Center for Strategic Studies"
+          width={378}
+          height={71}
+        />
+      </div>
 
+      <Container className="pb-14!">
         <div className="mx-auto text-center">
           <h2 className="title">{t("aboutFact.title")}</h2>
-          <p className="my-4 text-2xl md:text-3xl font-bold">
+          <p className="my-4 text-2xl md:text-3xl xl:text-[2.25rem] font-bold text-[#1B4332]">
             {t("aboutFact.subtitle")}
           </p>
           <p className="paragraph">{t("aboutFact.description")}</p>

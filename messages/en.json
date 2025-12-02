@@ -50,7 +50,6 @@
       "latestBadge": "Latest",
       "readMore": "Read More"
     },
-
     "publications": [
       {
         "title": "Palestinian Refugees 2025",
@@ -70,7 +69,6 @@
       "description": "Stay updated with our latest releases offering deep insights into the most critical issues in our field.",
       "viewAll": "View All"
     },
-
     "books": [
       {
         "title": "Palestinian Education Between Occupation and Resistance",
@@ -85,31 +83,29 @@
         "author": "Mohammed Ahmed Siyam"
       }
     ],
-
     "newsSection": {
       "title": "Latest News & Announcements",
       "description": "Stay informed with our latest updates offering deep insights into the most critical issues in our fields.",
       "readMore": "Read More"
     },
-
     "news": [
       {
-        "title": "Scientists intensify efforts to collect and analyze data to understand environmental and climate changes"
+        "title": "Scientists around the world are intensifying their field efforts to collect and analyze data, with the aim of understanding environmental and climatic changes and their future impacts."
       },
       {
-        "title": "Scientists intensify efforts to collect and analyze data to understand environmental and climate changes"
+        "title": "Scientists around the world are intensifying their field efforts to collect and analyze data, with the aim of understanding environmental and climatic changes and their future impacts."
       },
       {
-        "title": "Scientists intensify efforts to collect and analyze data to understand environmental and climate changes"
+        "title": "Scientists around the world are intensifying their field efforts to collect and analyze data, with the aim of understanding environmental and climatic changes and their future impacts."
       },
       {
-        "title": "Scientists intensify efforts to collect and analyze data to understand environmental and climate changes"
+        "title": "Scientists around the world are intensifying their field efforts to collect and analyze data, with the aim of understanding environmental and climatic changes and their future impacts."
       },
       {
-        "title": "Scientists intensify efforts to collect and analyze data to understand environmental and climate changes"
+        "title": "Scientists around the world are intensifying their field efforts to collect and analyze data, with the aim of understanding environmental and climatic changes and their future impacts."
       },
       {
-        "title": "Scientists intensify efforts to collect and analyze data to understand environmental and climate changes"
+        "title": "Scientists around the world are intensifying their field efforts to collect and analyze data, with the aim of understanding environmental and climatic changes and their future impacts."
       }
     ],
     "eventsSlider": {
@@ -118,7 +114,6 @@
       "prevButton": "Previous",
       "nextButton": "Next"
     },
-
     "events": [
       {
         "date": "April 3, 2026",
@@ -149,51 +144,125 @@
       "title": "Our Trusted Partners",
       "description": "Collaborating with strategic partners to deliver results that meet the highest standards."
     },
-
     "partnersAlt": {
       "1": "UNRWA",
       "2": "Human Rights Council - HRC",
       "3": "WikiPalestine"
     }
   },
-  "footer": {
-    "newsletter": {
-      "placeholder": "Email Address",
-      "subscribe": "Subscribe"
+  "aboutUs": {
+    "title": "Who We Are",
+    "description": "Learn about the Facts Center for Strategic Studies",
+    "heroTitle": "Who We Are",
+    "about": {
+      "title": "FACT Center for Strategic Studies",
+      "paragraph1": "It is an independent research institution founded in London in early 2025, headed by former Jordanian Minister Wajih Azaizeh, and includes a select group of researchers and experts in refugee issues and international conflicts.",
+      "paragraph2": "The center aims to provide a deep understanding of regional and international challenges, and to produce scientific knowledge that contributes to formulating realistic policies and future solutions.",
+      "paragraph3": "FACT focuses on strategic issues related to asylum and displacement, with special attention to the Palestinian refugee issue and the role of UNRWA, in addition to studying international conflicts, regional security trends, and the legal and human rights dimensions of humanitarian crises.",
+      "imageAlt": "FACT Center for Strategic Studies"
     },
-    "logoAlt": "FACT Center for Strategic Studies",
-
-    "quickLinks": {
-      "title": "Quick Links",
-      "about": "About Us",
-      "research": "Research & Studies",
-      "publications": "Publications",
-      "events": "Events",
-      "blog": "Blog",
-      "contact": "Contact Us"
-    },
-
-    "contact": {
-      "title": "Contact",
-      "email": "fact@email.com",
-      "phone": "+962 7000 000",
-      "address": "Amman, Jordan."
-    },
-
-    "social": {
-      "title": "Follow Us",
-      "facebook": "Facebook",
-      "linkedin": "LinkedIn",
-      "x": "X (Twitter)",
-      "instagram": "Instagram",
-      "youtube": "YouTube"
-    },
-
-    "bottomLinks": {
-      "copyright": "Copyright",
-      "privacy": "Privacy Policy",
-      "comments": "Comments Policy",
-      "terms": "Terms & Conditions"
-    }
-  }
-}
+    "vision": {
+      "title": "Our Vision",
+            "description": "To be a leading intellectual platform in the region and the world, providing a vision for thinking... and solutions for the future, and contributing to building sustainable peace based on a deep understanding of the roots of crises and their complexities."
+          },
+          "mission": {
+            "title": "Our Mission",
+            "description": "At FACT, we strive to provide reliable studies and in-depth analyses that help decision-makers and international institutions adopt well-considered policies based on data and scientific research, while promoting human justice and protecting the rights of refugees."
+          }
+        },
+        "research": {
+          "heroTitle": "Research & Studies",
+          "title": "About Us",
+          "description": "Learn about FACT Center for Strategic Studies",
+          "about": {
+            "title": "About the Department",
+            "paragraph1": "The FACT Center for Strategic Studies provides a wide range of specialized research and studies addressing issues of asylum and displacement, regional and international conflicts, and geopolitical transformations. The Center relies on advanced research methodologies and a network of experts who analyze events and develop evidence-based insights, future visions, and policy recommendations."
+          },
+          "vision": {
+            "title": "Our Vision",
+            "description": "To be a leading intellectual platform in the region and the world, offering innovative thinking and sustainable solutions for the future, while contributing to building lasting peace grounded in a deep understanding of the root causes and complexities of crises."
+          },
+          "mission": {
+            "title": "Our Mission",
+            "description": "At FACT, we strive to provide reliable studies and in-depth analyses that assist decision-makers and international institutions in adopting well-informed, data-driven policies. We are committed to promoting humanitarian justice and protecting the rights of refugees."
+          },
+          "researchImportance": {
+            "title": "Research Importance",
+            "items": {
+              "1": "Bridging the information gap in refugee and conflict issues.",
+              "2": "Providing strategic analyses to support decision-makers.",
+              "3": "Enhancing public awareness of humanitarian and geopolitical issues."
+            }
+          },
+          "exploreResearch": {
+            "title": "Explore Latest Research & Reports",
+            "description": "Links to latest releases, downloadable files, categorization by field, search bar.",
+            "button": "Contact Us"
+          },
+          "publicationsPage": {
+            "heroTitle": "Publications",
+            "whatWePublish": {
+              "title": "What We Publish?",
+              "items": {
+                "1": {
+                  "title": "Policy Papers",
+                  "desc": "Focused analyses providing practical recommendations on urgent issues affecting decision-making."
+                },
+                "2": {
+                  "title": "In-depth Reports",
+                  "desc": "Extensive studies covering asylum, conflicts, political transformations, and international law."
+                },
+                "3": {
+                  "title": "Analytical Briefs",
+                  "desc": "Quick summaries outlining event trends and providing a concise reading of key developments."
+                },
+                "4": {
+                  "title": "Periodical Newsletters",
+                  "desc": "Regular monitoring of key regional and international developments and their impacts."
+                }
+              }
+            },
+            "selectedPublications": {
+              "title": "Selected Publications",
+              "description": "Discover our latest releases combining in-depth analysis and strategic insights on regional and international issues.",
+              "readMore": "Read More"
+            }
+          }
+        },
+        "footer": {
+          "newsletter": {
+            "placeholder": "Email Address",
+            "subscribe": "Subscribe"
+          },
+          "logoAlt": "FACT Center for Strategic Studies",
+          "quickLinks": {
+            "title": "Quick Links",
+            "about": "About Us",
+            "research": "Research & Studies",
+            "publications": "Publications",
+            "events": "Events",
+            "blog": "Blog",
+            "contact": "Contact Us"
+          },
+          "contact": {
+            "title": "Contact",
+            "email": "fact@email.com",
+            "phone": "+962 7000 000",
+            "address": "Amman, Jordan."
+          },
+          "social": {
+            "title": "Follow Us",
+            "facebook": "Facebook",
+            "linkedin": "LinkedIn",
+            "x": "X (Twitter)",
+            "instagram": "Instagram",
+            "youtube": "YouTube"
+          },
+          "bottomLinks": {
+            "copyright": "Copyright",
+            "privacy": "Privacy Policy",
+            "comments": "Comments Policy",
+            "terms": "Terms & Conditions"
+          }
+        }
+      }

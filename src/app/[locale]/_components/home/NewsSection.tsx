@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import { CustomBtnLink } from "@/components/shared/CustomBtnLink";
 import { Skeleton } from "@/components/shared/Skeleton";
 import { useMounted } from "@/hooks/useMounted";
 
@@ -9,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Container } from "@/components/shared/Container";
 import { useTranslations } from "next-intl";
+import { NewsCard } from "./NewsCard";
 
 export function NewsSection() {
   const t = useTranslations("home.newsSection");
@@ -48,40 +47,12 @@ export function NewsSection() {
             >
               {news.map((n) => (
                 <SwiperSlide key={n.id}>
-                  <article className="group relative overflow-hidden rounded-md">
-                    <div className="relative aspect-square w-full">
-                      <Image
-                        src={n.img}
-                        alt={n.title}
-                        fill
-                        className="object-cover"
-                      />
-                      <div className="absolute inset-0 bg-black/40 transition-colors duration-300 group-hover:bg-black/35" />
-                      <div className="absolute inset-0 flex items-end">
-                        <div className="w-full p-4 text-white">
-                          <h3
-                            className="line-clamp-2 text-base font-bold leading-7"
-                            title={n.title}
-                          >
-                            {n.title}
-                          </h3>
-                          <div className="mt-3 flex">
-                            <CustomBtnLink
-                              href={`#news-${n.id}`}
-                              className="px-4 py-2 shadow-sm"
-                              iconSrc="/assets/images/latestarticle/eye.svg"
-                              iconAlt="Read news"
-                              iconWidth={23}
-                              iconHeight={23}
-                              iconPriority
-                            >
-                              {t("readMore")}
-                            </CustomBtnLink>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
+                  <NewsCard
+                    id={n.id}
+                    title={n.title}
+                    img={n.img}
+                    readMoreText={t("readMore")}
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>

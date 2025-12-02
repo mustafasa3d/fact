@@ -64,7 +64,10 @@ export function EventsSlider() {
             ) : (
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {[...Array(4)].map((_, i) => (
-                  <Skeleton key={i} className="aspect-square w-full rounded-md" />
+                  <Skeleton
+                    key={i}
+                    className="aspect-square w-full rounded-md"
+                  />
                 ))}
               </div>
             )}
@@ -77,25 +80,53 @@ export function EventsSlider() {
               type="button"
               aria-label={t("prevButton")}
               onClick={() => swiperRef.current?.slidePrev()}
-              className="rtl:rotate-180 grid h-9 w-9 place-items-center rounded-full border border-primary text-primary transition-colors hover:bg-primary hover:text-white"
+              className="rtl:rotate-180 grid h-8 lg:h-10 w-8 lg:w-10 place-items-center rounded-full border border-primary text-primary transition-colors hover:bg-primary hover:text-white"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M15 19l-7-7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M15 19l-7-7 7-7"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </button>
             <button
               type="button"
               aria-label={t("nextButton")}
               onClick={() => swiperRef.current?.slideNext()}
-              className="rtl:rotate-180 grid h-9 w-9 place-items-center rounded-full border border-primary text-primary transition-colors hover:bg-primary hover:text-white"
+              className="rtl:rotate-180 grid h-8 lg:h-10 w-8 lg:w-10 place-items-center rounded-full border border-primary text-primary transition-colors hover:bg-primary hover:text-white"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </button>
           </div>
 
-          <CustomBtnLink Com={Link} href="#all-events" className="rounded-md px-5 py-2 shadow-sm">
+          <CustomBtnLink
+            Com={Link}
+            href="#all-events"
+            className="px-5 py-2 shadow-sm xl:text-xl xl:font-bold xl:px-11"
+          >
             {t("viewAll")}
           </CustomBtnLink>
         </div>

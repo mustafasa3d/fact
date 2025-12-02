@@ -1,3 +1,5 @@
+import { Navbar } from "@/components/layout/navbar/Navbar";
+import { Footer } from "@/components/layout/footer/Footer";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 // import { routing } from "@/i18n/routing";
@@ -18,7 +20,9 @@ export default async function ProvidersLayout({
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      {children}
+      <Navbar />
+        {children}
+      <Footer />
     </NextIntlClientProvider>
   );
 }

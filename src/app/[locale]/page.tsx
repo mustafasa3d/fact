@@ -14,7 +14,6 @@ export default function LocaleHome() {
 
   return (
     <div className="min-h-screen">
-      <Navbar />
       <Hero />
       <AboutFact />
       <VideoAndPillars />
@@ -23,7 +22,6 @@ export default function LocaleHome() {
       <NewsSection />
       <EventsSlider />
       <TrustedPartners />
-      <Footer />
     </div>
   );
 }

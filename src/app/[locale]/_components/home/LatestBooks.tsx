@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { CustomBtnLink } from "@/components/shared/CustomBtnLink";
 import { Container } from "@/components/shared/Container";
+import { BookCard } from "@/components/cards/BookCard";
 import { getTranslations } from "next-intl/server";
 
 export async function LatestBooks() {
@@ -40,44 +40,12 @@ export async function LatestBooks() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {books.map((b) => (
-            <article
-              key={b.id}
-              className="group overflow-hidden rounded-md bg-white"
-            >
-              <div className="relative aspect-square lg:aspect-3/4 w-full">
-                <Image
-                  src={b.img}
-                  alt={b.title}
-                  width={600}
-                  height={700}
-                  className="w-full h-[calc(100%-50px)] object-cover ring-1 ring-gray-200 no-repeat"
-                />
-                <div className="absolute inset-x-0 bottom-0">
-                  <div className="mx-3 -mb-1 rounded bg-primary px-4 py-3 text-white shadow-md">
-                    <h3
-                      className="text-center mb-3.5 line-clamp-2 text-base md:text-2xl font-bold"
-                      title={b.title}
-                    >
-                      {b.title}
-                    </h3>
-                    <div className="flex items-center justify-center gap-2 text-xs opacity-90">
-                      <span className="text-base md:text-xl">{b.author}</span>
-                      <Image
-                        src="/assets/images/latestversions/user.svg"
-                        width={20}
-                        height={22}
-                        alt="Author"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
+            <BookCard key={b.id} title={b.title} author={b.author} img={b.img} />
           ))}
         </div>
 
-        <div className="mt-8 flex justify-center">
-          <CustomBtnLink href="#all-books" className="px-6 py-2 shadow-sm">
+        <div className="mt-18 flex justify-center">
+          <CustomBtnLink href="#all-books" className="px-7 py-2 shadow-sm xl:px-9 xl:font-bold xl:text-xl">
             {t("viewAll")}
           </CustomBtnLink>
         </div>

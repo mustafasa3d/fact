@@ -80,6 +80,6 @@ input[type="search"]::placeholder {
   }
 
   .paragraph {
-    @apply text-xl md:text-[1.7rem] leading-8;
+    @apply text-xl md:text-[1.7rem] xl:text-3xl text-[#1B4332];
   }
 }

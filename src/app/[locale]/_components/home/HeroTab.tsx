@@ -13,7 +13,7 @@ export default function HeroTab({ children, active, imgSrc, noLine }: HeroTabPro
   return (
     <button
       className={cn(
-        "flex max-md:border max-md:border-gray-200 max-md:after:hidden! flex-col items-center justify-center gap-3 px-4 py-5 text-sm lg:text-3xl transition-colors bg-white text-gray-900 hover:bg-gray-50 relative",
+        "flex max-md:border max-md:border-gray-200 max-md:after:hidden! flex-col items-center justify-center gap-3 lg:gap-4 px-4 py-5 text-lg font-medium lg:text-3xl xl:text-[2rem] transition-colors bg-white text-gray-900 hover:bg-gray-50 relative",
         noLine
           ? " after:hidden!"
           : " after:content-[''] after:absolute after:min-h-[20px] after:h-[calc(100%-50px)] after:w-[2px] after:bg-gray-200 after:inline-block rtl:after:left-0 ltr:after:right-0 after:top-5 ",
@@ -28,7 +28,7 @@ export default function HeroTab({ children, active, imgSrc, noLine }: HeroTabPro
           alt=""
           width={106}
           height={106}
-          className="h-16 w-16 md:h-24 md:w-24"
+          className="h-16 w-16 md:h-24 md:w-24 xl:h-26.5 xl:w-26.5"
         />
       )}
       {children}

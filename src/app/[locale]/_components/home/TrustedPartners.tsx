@@ -37,9 +37,9 @@ export function TrustedPartners() {
               <Image
                 src={p.src}
                 alt={ta(String(p.id % 3 === 0 ? 3 : p.id % 3))} // 1→1, 2→2, 3→3, 4→1, 5→2, 6→3
-                width={180}
-                height={64}
-                className="h-16 w-auto object-contain"
+                width={250}
+                height={100}
+                className="h-24 w-auto object-contain"
                 priority
               />
             </div>

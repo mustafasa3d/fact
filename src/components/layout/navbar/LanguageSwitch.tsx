@@ -22,15 +22,15 @@ function LanguageSwitch({className}: {className?: string}) {
     <div className={cn("flex items-center gap-5", className)}>
       <button
         onClick={toggleLanguage}
-        className="inline-flex items-center gap-1 cursor-pointer rounded-full text-xs font-medium text-white shadow-sm hover:bg-[#0d4f3a]"
+        className="inline-flex items-center gap-1 cursor-pointer rounded-full text-xs md:text-sm lg:text-lg font-medium text-white hover:text-white/70 duration-300"
       >
         {t("english")}
         <Image
           src="/assets/images/navbar/world.svg"
-          className="h-4 w-4"
+          className="h-5 w-5"
           alt="arrow"
-          width={16}
-          height={16}
+          width={20}
+          height={20}
           priority
         />
       </button>
