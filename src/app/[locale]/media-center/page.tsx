@@ -110,7 +110,7 @@ export default async function AboutUsPage() {
                   id={n.id}
                   title={n.title}
                   img={n.img}
-                  readMoreText={t("readMore")}
+                  readMoreText={"قراء المزيد"}
                 />
               </div>
             ))}
