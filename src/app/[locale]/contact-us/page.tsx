@@ -42,7 +42,7 @@ export default async function AboutUsPage() {
 
         <Container>
           {/* Content */}
-          <div className="relative flex items-center justify-between z-10">
+          <div className="relative flex flex-col md:flex-row items-center justify-between z-10">
             <h1 className="title flex-1 text-4xl md:text-5xl lg:text-[3.5rem] font-bold">
               تواصل معنا
             </h1>
