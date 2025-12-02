@@ -19,7 +19,7 @@ export function Navbar() {
     { href: `/${locale}/research`, label: t("research") },
     { href: `/${locale}/publications`, label: t("publications") },
     { href: `/${locale}/traffic-memory`, label: t("memory") },
-    { href: "#mediaCenter", label: t("mediaCenter") },
+    { href:  `/${locale}/media-center`, label: t("mediaCenter") },
     { href: "#blog", label: t("blog") },
     { href: "#contact", label: t("contact") },
   ];

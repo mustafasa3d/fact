@@ -90,7 +90,8 @@ export function CustomAboutSection({
               hasImages ? "lg:col-span-8" : "col-span-1 lg:col-span-12"
             )}
           >
-            <h2 className="text-3xl lg:text-[36px] font-bold text-[#1b4332] mb-6 lg:mb-8 leading-normal">
+            {/* text-[#1b4332] */}
+            <h2 className="title text-3xl lg:text-[36px] font-bold mb-6 lg:mb-8 leading-normal">
               {title}
             </h2>
 

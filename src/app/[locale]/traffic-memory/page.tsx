@@ -11,6 +11,11 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+interface FieldData {
+    number: number;
+    title: string[];
+    description: string[];
+}
 export default async function TrafficMemoryPage() {
   const fieldsData: FieldData[] = [
     {
